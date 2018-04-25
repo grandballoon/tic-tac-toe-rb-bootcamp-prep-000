@@ -78,7 +78,6 @@ end
 end
 
 def move(board, index, token)
-  binding.pry
   board[index] = token
 end
 
