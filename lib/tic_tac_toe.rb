@@ -115,5 +115,5 @@ if won?(board) == true
 
 elsif draw?(board) == true
   puts "Cat's Game!"
-end 
+end
 end
