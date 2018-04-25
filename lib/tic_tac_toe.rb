@@ -107,12 +107,11 @@ end
 end
 
 def play(board)
-  
+
     until over?(board) == true
       turn(board)
     end
 if won?(board)
-  binding.pry
   puts "Congratulations, #{board[won?(board)[0]]}!"
 
 elsif draw?(board) == true
