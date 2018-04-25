@@ -107,7 +107,7 @@ end
 end
 
 def play (board)
-  input = gets
+  input = gets.to_i
     until over?(board) == true
       move(board, input, token = "X")
     end
