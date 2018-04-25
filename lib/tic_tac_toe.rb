@@ -56,9 +56,7 @@ def current_player(board)
 end
 
 def valid_move?(board, index)
-elsif index.between?(0,8) == true && position_taken?(board,index) == false
-  return true
-end
+ index.between?(0,8) == true && position_taken?(board,index) == false
 end
 
 
