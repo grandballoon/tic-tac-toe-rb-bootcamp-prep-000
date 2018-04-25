@@ -66,7 +66,7 @@ end
 end
 
 
-def turn (board)
+def turn(board)
  puts "Please enter 1-9:"
 user_move = gets.strip
 user_index = input_to_index(user_move)
@@ -106,10 +106,10 @@ elsif index.between?(0,8) == true && position_taken?(board,index) == false
 end
 end
 
-def play (board)
-  input = gets.to_i
+def play(board)
+  
     until over?(board) == true
-      move(board, input, token = "X")
+      turn(board)
     end
 if won?(board)
   binding.pry
