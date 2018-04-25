@@ -112,3 +112,5 @@ def play (board)
 if won?(board) == true
   puts "Congratulations, #{board[won?(board)[0]]}!"
 end
+elsif draw?(board) == true
+  puts "Cat's Game!"
