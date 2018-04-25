@@ -109,7 +109,7 @@ def play (board)
     until over?(board) == true
       move(board, input, token = "X")
     end
-if won?(board) == true
+if won?(board)
   binding.pry
   puts "Congratulations, #{board[won?(board)[0]]}!"
 
