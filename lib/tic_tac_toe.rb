@@ -72,7 +72,7 @@ user_move = gets.strip
 user_index = input_to_index(user_move)
 validity = valid_move?(board, user_index)
 if validity
-  move(board, user_index, token = "X")
+  move(board, user_index, current_player(board))
   display_board(board)
 else
   turn(board)
