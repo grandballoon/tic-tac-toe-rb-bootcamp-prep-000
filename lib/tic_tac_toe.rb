@@ -110,5 +110,5 @@ def play (board)
       move(board, input, token = "X")
     end
 if won?(board) == true
-  puts "Congratulations, #{board[won?(board)[0]]}"
+  puts "Congratulations, #{board[won?(board)[0]]}!"
 end
